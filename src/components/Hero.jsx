@@ -14,7 +14,7 @@ import mouseAlone from '../assets/mouse.png'
 import owlfun from '../assets/owlfun.png'
 import ScietistKid from '../assets/Scientistkid.png'
 import ViolinKid from '../assets/Violinkid.png'
-import ArtsKid from '../assets/artsKid.png'
+import ArtsKid from '../assets/artskid.png'
 
 
 const images = [adakena10, adakena2, adakena4, TracingCover, TracingInside, Tiny_Dino,dinoinside]
