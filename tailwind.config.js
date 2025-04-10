@@ -38,8 +38,13 @@ export default {
         'fly-3': 'fly3 16s ease-in-out infinite alternate',
         'flap': 'flap 0.6s ease-in-out infinite',
         'scroll-drift': 'scrollDrift 20s linear infinite',
+        'hover-updown': 'hoverUpDown 4s ease-in-out infinite',
       },
       keyframes: {
+        hoverUpDown: {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-10px)' },
+        },
         flap: {
           '0%, 100%': { transform: 'scaleY(1) skewX(0deg)' },
           '50%': { transform: 'scaleY(0.9) skewX(2deg)' },
