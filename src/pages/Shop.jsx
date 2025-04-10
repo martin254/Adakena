@@ -65,13 +65,10 @@ const Shop = () => {
 
   return (
     <section className="max-padd-container bg-[#FFFAEB] relative font-fun overflow-hidden">
-<<<<<<< HEAD
       <FloatingDecorations />
-=======
       {/* ☁️ Enhanced Floating Clouds */}
       <div className="absolute w-36 h-36 bg-white opacity-80 rounded-full top-[90px] left-6 blur-2xl animate-float-slow z-0" />
       <div className="absolute w-28 h-28 bg-white opacity-70 rounded-full top-[60%] right-6 blur-xl animate-float-medium z-0" />
->>>>>>> 747ff16751dbf4882fac2a4f5c59d6eef63cff8e
 
       {/* ✨ Sparkles */}
       <div className="absolute top-[65%] left-1/4 w-3 h-3 bg-yellow-300 rounded-full animate-sparkle z-0" />
@@ -106,10 +103,6 @@ const Shop = () => {
                   className="hidden peer"
                 />
                 <div className="flexCenter flex-col gap-2 p-4 rounded-xl cursor-pointer bg-[#fff8e7] shadow-md transition-transform transform hover:scale-105 hover:-translate-y-1 peer-checked:ring-2 ring-secondaryOne animate-float-medium">
-<<<<<<< HEAD
-=======
-
->>>>>>> 747ff16751dbf4882fac2a4f5c59d6eef63cff8e
                   <div className="bg-white h-20 w-20 flexCenter rounded-full shadow-sm">
                     <img src={cat.image} alt={cat.name} className="h-10 w-10 object-contain" />
                   </div>
