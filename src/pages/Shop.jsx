@@ -63,9 +63,11 @@ const Shop = () => {
 
   return (
     <section className="max-padd-container bg-[#FFFAEB] relative font-fun overflow-hidden">
-      {/* ☁️ Floating Clouds & Sparkles */}
-      <div className="absolute w-20 h-20 bg-white opacity-60 rounded-full top-10 left-10 blur-sm animate-float-slow z-0" />
-      <div className="absolute w-16 h-16 bg-white opacity-40 rounded-full top-1/2 right-12 blur-md animate-float-medium z-0" />
+      {/* ☁️ Enhanced Floating Clouds */}
+      <div className="absolute w-36 h-36 bg-white opacity-80 rounded-full top-[90px] left-6 blur-2xl animate-float-slow z-0" />
+      <div className="absolute w-28 h-28 bg-white opacity-70 rounded-full top-[60%] right-6 blur-xl animate-float-medium z-0" />
+
+      {/* ✨ Sparkles */}
       <div className="absolute top-[65%] left-1/4 w-3 h-3 bg-yellow-300 rounded-full animate-sparkle z-0" />
       <div className="absolute top-[30%] right-1/4 w-2.5 h-2.5 bg-pink-300 rounded-full animate-sparkle z-0" />
 
@@ -85,7 +87,7 @@ const Shop = () => {
           </div>
         </div>
 
-        {/* 🏷️ Categories */}
+        {/* 🏷️ Categories - Floating & Peach */}
         <div className="mb-16">
           <h4 className="text-xl font-story mb-4 hidden sm:block"> Filters :</h4>
           <div className="flex flex-wrap items-center justify-center sm:justify-start gap-6">
@@ -97,8 +99,9 @@ const Shop = () => {
                   type="checkbox"
                   className="hidden peer"
                 />
-                <div className="flexCenter flex-col gap-2 p-3 rounded-xl cursor-pointer bg-white shadow-md peer-checked:ring-2 ring-secondaryOne hover:scale-105 transition-transform">
-                  <div className="bg-[#fdf6f0] h-20 w-20 flexCenter rounded-full">
+                <div className="flexCenter flex-col gap-2 p-4 rounded-xl cursor-pointer bg-[#fff8e7] shadow-md transition-transform transform hover:scale-105 hover:-translate-y-1 peer-checked:ring-2 ring-secondaryOne animate-float-medium">
+
+                  <div className="bg-white h-20 w-20 flexCenter rounded-full shadow-sm">
                     <img src={cat.image} alt={cat.name} className="h-10 w-10 object-contain" />
                   </div>
                   <span className="text-sm text-gray-700 font-fun">{cat.name}</span>
@@ -177,6 +180,7 @@ const Shop = () => {
           </button>
         </div>
       </div>
+
       <Footer />
     </section>
   )
