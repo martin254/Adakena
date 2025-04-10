@@ -1,3 +1,7 @@
+![image](https://github.com/user-attachments/assets/63038f48-4754-474e-8a36-c40221a6c568)
+
+Kids Author Book Store built with React JS
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
