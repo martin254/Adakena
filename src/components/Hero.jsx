@@ -55,11 +55,7 @@ const Hero = () => {
       {/* 🐭 Floating owl */}
 
 
-<img 
-  src={ArtsKid}
-  alt="owl Group"
-  className="rounded-xl absolute w-[150px] top-15 left-8 animate-float-slow opacity-35 z-0"
-/>
+
 
 {/* 🐭 Floating Mouse Alone (Right Middle) */}
 {/*<img 
