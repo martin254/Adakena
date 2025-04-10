@@ -1,3 +1,4 @@
+// Shop.jsx
 import React, { useContext, useState, useEffect } from 'react'
 import { RiSearch2Line } from 'react-icons/ri'
 import { categories } from '../assets/data'
@@ -6,6 +7,7 @@ import Title from '../components/Title'
 import { ShopContext } from '../context/ShopContext'
 import Item from '../components/Item'
 import Footer from '../components/Footer'
+import FloatingDecorations from '../components/FloatingDecorations'
 
 const Shop = () => {
   const { books } = useContext(ShopContext)
@@ -63,9 +65,9 @@ const Shop = () => {
 
   return (
     <section className="max-padd-container bg-[#FFFAEB] relative font-fun overflow-hidden">
-      {/* ☁️ Floating Clouds & Sparkles */}
-      <div className="absolute w-20 h-20 bg-white opacity-60 rounded-full top-10 left-10 blur-sm animate-float-slow z-0" />
-      <div className="absolute w-16 h-16 bg-white opacity-40 rounded-full top-1/2 right-12 blur-md animate-float-medium z-0" />
+      <FloatingDecorations />
+
+      {/* ✨ Sparkles */}
       <div className="absolute top-[65%] left-1/4 w-3 h-3 bg-yellow-300 rounded-full animate-sparkle z-0" />
       <div className="absolute top-[30%] right-1/4 w-2.5 h-2.5 bg-pink-300 rounded-full animate-sparkle z-0" />
 
@@ -97,8 +99,8 @@ const Shop = () => {
                   type="checkbox"
                   className="hidden peer"
                 />
-                <div className="flexCenter flex-col gap-2 p-3 rounded-xl cursor-pointer bg-white shadow-md peer-checked:ring-2 ring-secondaryOne hover:scale-105 transition-transform">
-                  <div className="bg-[#fdf6f0] h-20 w-20 flexCenter rounded-full">
+                <div className="flexCenter flex-col gap-2 p-4 rounded-xl cursor-pointer bg-[#fff8e7] shadow-md transition-transform transform hover:scale-105 hover:-translate-y-1 peer-checked:ring-2 ring-secondaryOne animate-float-medium">
+                  <div className="bg-white h-20 w-20 flexCenter rounded-full shadow-sm">
                     <img src={cat.image} alt={cat.name} className="h-10 w-10 object-contain" />
                   </div>
                   <span className="text-sm text-gray-700 font-fun">{cat.name}</span>
@@ -130,7 +132,6 @@ const Shop = () => {
             </div>
           </div>
 
-          {/* 🎨 Books */}
           <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
             {getPaginatedBooks().length > 0 ? (
               getPaginatedBooks().map((book) => (
@@ -147,31 +148,23 @@ const Shop = () => {
           <button
             disabled={currentPage === 1}
             onClick={() => setCurrentPage((prev) => prev - 1)}
-            className={`btn-secondary !py-1 !px-4 rounded-full font-fun ${
-              currentPage === 1 && 'opacity-50 cursor-not-allowed'
-            }`}
+            className={`btn-secondary !py-1 !px-4 rounded-full font-fun ${currentPage === 1 && 'opacity-50 cursor-not-allowed'}`}
           >
             ← Prev
           </button>
-
           {Array.from({ length: totalPages }, (_, index) => (
             <button
               key={index}
               onClick={() => setCurrentPage(index + 1)}
-              className={`btn-light !py-1 !px-3 rounded-full font-fun ${
-                currentPage === index + 1 && '!bg-secondaryOne text-white'
-              }`}
+              className={`btn-light !py-1 !px-3 rounded-full font-fun ${currentPage === index + 1 && '!bg-secondaryOne text-white'}`}
             >
               {index + 1}
             </button>
           ))}
-
           <button
             disabled={currentPage === totalPages}
             onClick={() => setCurrentPage((prev) => prev + 1)}
-            className={`btn-secondary !py-1 !px-4 rounded-full font-fun ${
-              currentPage === totalPages && 'opacity-50 cursor-not-allowed'
-            }`}
+            className={`btn-secondary !py-1 !px-4 rounded-full font-fun ${currentPage === totalPages && 'opacity-50 cursor-not-allowed'}`}
           >
             Next →
           </button>

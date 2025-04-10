@@ -2,7 +2,8 @@ import React from 'react'
 import { TbHomeFilled } from 'react-icons/tb'
 import { IoLibrary, IoMailOpen } from 'react-icons/io5'
 import { FaRegWindowClose } from 'react-icons/fa'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
+import FunLink from './FunLink'
 
 const Navbar = ({ containerStyles, toggleMenu, menuOpened }) => {
   const navItems = [
@@ -11,17 +12,19 @@ const Navbar = ({ containerStyles, toggleMenu, menuOpened }) => {
     { to: 'mailto:info@adakena.com', label: 'Contact', icon: <IoMailOpen /> },
   ]
 
+  const { pathname } = useLocation()
+
   return (
     <nav className={`${containerStyles} font-fun`}>
-      {/* close button inside mobile menu */}
+      {/* Close button for mobile */}
       {menuOpened && (
         <>
           <FaRegWindowClose
             onClick={toggleMenu}
             className="text-xl self-end cursor-pointer relative left-8"
           />
-          {/* logo */}
-          <Link to="/" className="text-2xl mb-10 text-amber-900 font-fun font-bold">
+          {/* Logo */}
+          <Link to="/" className="text-2xl mb-10 text-amber-900 font-bold font-fun">
             Adakena
           </Link>
         </>
@@ -33,22 +36,24 @@ const Navbar = ({ containerStyles, toggleMenu, menuOpened }) => {
             <a
               onClick={menuOpened ? toggleMenu : undefined}
               href={to}
-              className="flexCenter gap-x-2 text-lg font-fun text-gray-700 hover:text-amber-700 transition"
+              className="flexCenter gap-x-2 text-lg text-gray-700 hover:text-amber-700 transition font-fun"
             >
               <span className="text-xl">{icon}</span>
               <span>{label}</span>
             </a>
           ) : (
-            <NavLink
+            <FunLink
               to={to}
               onClick={menuOpened ? toggleMenu : undefined}
-              className={({ isActive }) =>
-                `${isActive ? 'text-amber-700 font-bold' : 'text-gray-700'} flexCenter gap-x-2 text-lg font-fun transition hover:text-amber-700`
-              }
+              className={`flexCenter gap-x-2 text-lg transition ${
+                pathname === to
+                  ? 'text-amber-700 font-bold'
+                  : 'text-gray-700 hover:text-amber-700'
+              }`}
             >
               <span className="text-xl">{icon}</span>
               <span>{label}</span>
-            </NavLink>
+            </FunLink>
           )}
         </div>
       ))}

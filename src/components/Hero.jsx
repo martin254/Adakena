@@ -14,7 +14,7 @@ import mouseAlone from '../assets/mouse.png'
 import owlfun from '../assets/owlfun.png'
 import ScietistKid from '../assets/Scientistkid.png'
 import ViolinKid from '../assets/Violinkid.png'
-import ArtsKid from '../assets/artsKid.png'
+import ArtsKid from '../assets/artskid.png'
 
 
 const images = [adakena10, adakena2, adakena4, TracingCover, TracingInside, Tiny_Dino,dinoinside]
@@ -55,11 +55,7 @@ const Hero = () => {
       {/* 🐭 Floating owl */}
 
 
-<img 
-  src={ArtsKid}
-  alt="owl Group"
-  className="rounded-xl absolute w-[150px] top-15 left-8 animate-float-slow opacity-60 z-0"
-/>
+
 
 {/* 🐭 Floating Mouse Alone (Right Middle) */}
 {/*<img 

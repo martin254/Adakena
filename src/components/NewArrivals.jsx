@@ -10,7 +10,7 @@ import frogs from '../assets/frogs.png'
 import KidEngineer from '../assets/KidEngineer.png'
 import ScietistKid from '../assets/Scientistkid.png'
 import ViolinKid from '../assets/Violinkid.png'
-import ArtsKid from '../assets/artsKid.png'
+import ArtsKid from '../assets/artskid.png'
 
 const NewArrivals = () => {
   const { books } = useContext(ShopContext)
@@ -63,8 +63,8 @@ const NewArrivals = () => {
       {/* 📚 Main Content */}
       <div className="relative z-10 max-padd-container">
         <Title
-          title1={'Latest'}
-          title2={'Releases'}
+          title1={'Latest Releases'}
+          
           titleStyles="pb-10 font-fun"
           paraStyles="!block text-lg text-gray-600 max-w-xl"
         />
