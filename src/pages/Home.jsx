@@ -10,14 +10,16 @@ import Footer from '../components/Footer'
 const Home = () => {
   return (
     <>
+   {/*<div className='max-padd-container bg-white'> */} 
     <Hero />
+    
     <NewArrivals />
  {/* <About /> */}
    {/*<PopularBooks /> */}
     <Features />
-    <div className='max-padd-container bg-white'>
+    
     <Footer />
-    </div>
+   {/* </div> */} 
     
     </>
   )
