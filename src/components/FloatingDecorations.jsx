@@ -20,6 +20,7 @@ const FloatingDecorations = () => {
         className="absolute top-[50%] right-[25%] w-24 sm:w-28 md:w-32 animate-hover-updown"
       />
     </div>
+    
   )
 }
 
