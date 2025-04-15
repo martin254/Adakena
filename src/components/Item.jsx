@@ -7,26 +7,24 @@ const Item = ({ book }) => {
   const { currency, addToCart } = useContext(ShopContext)
 
   return (
-    <div className="transition-transform transform hover:scale-105 hover:animate-tilt duration-300">
+    <div className="flex flex-col justify-between h-[420px] max-w-[250px] mx-auto transition-transform transform hover:scale-105 hover:animate-tilt duration-300">
       {/* Image wrapped in Link */}
       <Link to={`/book/${book._id}`}>
-        <div className="flexCenter bg-primary p-6 rounded-3xl overflow-hidden relative group">
+        <div className="flexCenter bg-primary p-4 rounded-3xl overflow-hidden relative group h-[260px]">
           <img
             src={book.image}
-            alt="bookImg"
-            className="shadow-xl shadow-slate-900/30 rounded-lg"
+            alt={book.name}
+            className="h-full w-auto max-h-[200px] object-contain mx-auto"
           />
         </div>
       </Link>
 
-      <div className="p-3">
+      {/* Book Info */}
+      <div className="p-3 flex flex-col justify-between h-full">
         <div className="flexBetween">
-          {/* Name linked */}
           <Link to={`/book/${book._id}`} className="hover:underline">
             <h4 className="h4 line-clamp-1 !my-0">{book.name}</h4>
           </Link>
-
-          {/* Add to cart */}
           <span
             onClick={() => addToCart(book._id)}
             className="flexCenter h-8 w-8 rounded cursor-pointer hover:bg-primary"
@@ -43,7 +41,6 @@ const Item = ({ book }) => {
           </h5>
         </div>
 
-        {/* Description linked */}
         <Link to={`/book/${book._id}`} className="text-sm text-gray-600 hover:text-amber-700">
           <p className="line-clamp-2 py-1">{book.description}</p>
         </Link>

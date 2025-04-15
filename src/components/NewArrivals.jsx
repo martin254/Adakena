@@ -6,11 +6,6 @@ import 'swiper/css/pagination'
 import { Autoplay, Pagination } from 'swiper/modules'
 import Item from './Item'
 import { ShopContext } from '../context/ShopContext'
-import frogs from '../assets/frogs.png'
-import KidEngineer from '../assets/KidEngineer.png'
-import ScietistKid from '../assets/Scientistkid.png'
-import ViolinKid from '../assets/Violinkid.png'
-import ArtsKid from '../assets/artskid.png'
 
 const NewArrivals = () => {
   const { books } = useContext(ShopContext)
@@ -24,36 +19,14 @@ const NewArrivals = () => {
   return (
     <section className="relative overflow-hidden bg-[#FFFAEB] py-16 font-fun">
       {/* 🎈 Floating Balloons */}
-      <svg
-        className="absolute w-10 top-8 left-8 animate-float-slow opacity-30 z-0"
-        viewBox="0 0 24 24"
-        fill="#ff90b3"
-      >
+      <svg className="absolute w-10 top-8 left-8 animate-float-slow opacity-30 z-0" viewBox="0 0 24 24" fill="#ff90b3">
         <circle cx="12" cy="8" r="6" />
         <path d="M12 14v6" stroke="#000" strokeWidth="1" />
       </svg>
-      <svg
-        className="absolute w-12 top-24 right-10 animate-float-medium opacity-30 z-0"
-        viewBox="0 0 24 24"
-        fill="#a5f3fc"
-      >
+      <svg className="absolute w-12 top-24 right-10 animate-float-medium opacity-30 z-0" viewBox="0 0 24 24" fill="#a5f3fc">
         <circle cx="12" cy="8" r="6" />
         <path d="M12 14v6" stroke="#000" strokeWidth="1" />
       </svg>
-
-     {/* 👷🏽‍♀️ Kid Engineer on top */}
-<img
-  src={KidEngineer}
-  alt="Kid Engineer"
-  className="hidden sm:block absolute w-[140px] md:w-[180px] xl:w-[220px] top-6 right-8 animate-float-slow z-0"
-/>
-
-{/* 🐸 Frogs below the girl */}
-<img
-  src={ViolinKid}
-  alt="Frogs"
-  className="hidden sm:block absolute w-[180px] md:w-[250px] xl:w-[320px] top-[180px] right-4 animate-float-medium z-0"
-/>
 
       {/* ✨ Sparkles */}
       <div className="absolute top-12 left-1/2 w-3 h-3 bg-yellow-300 rounded-full animate-sparkle z-0" />
@@ -64,9 +37,8 @@ const NewArrivals = () => {
       <div className="relative z-10 max-padd-container">
         <Title
           title1={'Latest Releases'}
-          
-          titleStyles="pb-10 font-fun"
-          paraStyles="!block text-lg text-gray-600 max-w-xl"
+          titleStyles="pb-10 text-center font-fun"
+          paraStyles="!block text-lg text-gray-600 text-center max-w-xl mx-auto"
         />
 
         <Swiper
@@ -76,17 +48,18 @@ const NewArrivals = () => {
           }}
           pagination={{ clickable: true }}
           breakpoints={{
-            400: { slidesPerView: 2, spaceBetween: 30 },
-            700: { slidesPerView: 3, spaceBetween: 30 },
-            1024: { slidesPerView: 4, spaceBetween: 30 },
-            1200: { slidesPerView: 5, spaceBetween: 30 },
+            320: { slidesPerView: 1, spaceBetween: 20 },
+            480: { slidesPerView: 2, spaceBetween: 20 },
+            768: { slidesPerView: 3, spaceBetween: 30 },
+            1024: { slidesPerView: 3, spaceBetween: 40 },
+            1280: { slidesPerView: 4, spaceBetween: 40 },
           }}
           modules={[Pagination, Autoplay]}
-          className="h-[455px] sm:h-[488px] xl:h-[499px] mt-5"
+          className="mt-5"
         >
           {newArrivals.map((book) => (
             <SwiperSlide key={book._id}>
-              <div className="transition-transform transform hover:scale-105 hover:animate-tilt">
+              <div className="h-full flex justify-center items-start">
                 <Item book={book} />
               </div>
             </SwiperSlide>
@@ -103,10 +76,7 @@ const NewArrivals = () => {
               <stop offset="100%" stopColor="#ffffff" />
             </linearGradient>
           </defs>
-          <path
-            fill="url(#waveGradient2)"
-            d="M0,60 C360,180 1080,0 1440,120 L1440,0 L0,0 Z"
-          />
+          <path fill="url(#waveGradient2)" d="M0,60 C360,180 1080,0 1440,120 L1440,0 L0,0 Z" />
         </svg>
       </div>
     </section>

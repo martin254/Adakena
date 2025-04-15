@@ -78,43 +78,42 @@ import {
   } from "react-icons/fa6";
 
 
-export const books = [
-    // Fiction
+  export const books = [
     {
-        _id: "1",
-        name: "Tracing Workbook",
-        image: tracingbook,
-        price: 30,
-        description: "Tracing Workbook for Preschoolers and Toddlers Letters, Numbers, Shapes, Lines & More! Unlock your child’s learning potential with this fun and engaging tracing workbook! Designed for children aged 3+, this educational resource helps develop essential pre-writing and fine motor skills through 100+ pages of creative activities.",
-        category: "Tracing",
-        date: 1716634345448,
-        popular: true,
+      _id: "1",
+      slug: "tracing-workbook",
+      name: "Tracing Workbook",
+      image: tracingbook,
+      price: 30,
+      description: "Tracing Workbook for Preschoolers...",
+      category: "Tracing",
+      date: 1716634345448,
+      popular: true,
     },
     {
-        _id: "2",
-        name: "Tiny Tinnie Dino",
-        image: Tiny_Dino,
-        price: 20,
-        description: "Dinosaur Colouring Book. Welcome to the exciting world of dinosaurs! This coloring book is perfect for young explorers aged 3 to 6 who love dinosaurs and creativity. Packed with over 50 pages of delightful dinosaur illustrations, this book offers a fun and educational journey through the prehistoric era.",
-        category: "Coloring",
-        date: 1716634345448,
-        popular: true,
+      _id: "2",
+      slug: "tiny-tinnie-dino",
+      name: "Tiny Tinnie Dino",
+      image: Tiny_Dino,
+      price: 20,
+      description: "Dinosaur Colouring Book...",
+      category: "Coloring",
+      date: 1716634345448,
+      popular: true,
     },
     {
-        _id: "3",
-        name: "Power of Dreams",
-        image: Adakena10,
-        price: 15,
-        description: "Aspiring Little Heroes.",
-        category: "StoryBook",
-        date: 1716634345448,
-        popular: true,
+      _id: "3",
+      slug: "power-of-dreams",
+      name: "Power of Dreams",
+      image: Adakena10,
+      price: 15,
+      description: "Aspiring Little Heroes.",
+      category: "StoryBook",
+      date: 1716634345448,
+      popular: true,
     },
-    
-
-    
-
-];
+  ]
+  ;
 
 
 

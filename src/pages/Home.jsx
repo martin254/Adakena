@@ -12,7 +12,7 @@ const Home = () => {
     <>
     <Hero />
     <NewArrivals />
-  <About /> 
+ {/* <About /> */}
    {/*<PopularBooks /> */}
     <Features />
     <div className='max-padd-container bg-white'>
