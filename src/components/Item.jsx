@@ -7,14 +7,14 @@ const Item = ({ book }) => {
   const { currency, addToCart } = useContext(ShopContext)
 
   return (
-    <div className="transition-transform transform hover:scale-105 duration-300">
-      {/* 🖼️ Image Container with nice white padding */}
+    <div className="group transition-transform duration-300">
+      {/* 🖼️ Floating Book Image with levitation on hover */}
       <Link to={`/book/${book._id}`}>
-        <div className="bg-white rounded-2xl p-4 shadow-md">
+        <div className="rounded-xl shadow-lg group-hover:shadow-2xl transform group-hover:-translate-y-2 transition-all duration-300 ease-out">
           <img
             src={book.image}
             alt={book.name}
-            className="w-full h-[260px] object-contain rounded-lg mx-auto"
+            className="w-full h-[260px] object-contain rounded-xl"
           />
         </div>
       </Link>

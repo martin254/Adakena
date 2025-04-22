@@ -80,7 +80,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Strip */}
-      <div className="bg-tertiary text-white py-3 px-6 flex flex-col sm:flex-row justify-between items-center text-sm rounded-b-2xl">
+      <div className="bg-amber-900 text-white py-3 px-6 flex flex-col sm:flex-row justify-between items-center text-sm rounded-b-2xl">
         <span>2025 Adakena</span>
         <span>All rights reserved</span>
       </div>

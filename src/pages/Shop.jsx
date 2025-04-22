@@ -135,7 +135,8 @@ const Shop = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+          <div className="grid justify-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-8 gap-y-12 px-2 sm:px-4 md:px-6">
+
             {getPaginatedBooks().length > 0 ? (
               getPaginatedBooks().map((book) => (
                 <Item key={book._id} book={book} />
