@@ -7,7 +7,7 @@ export const ShopContext = createContext()
 
 const ShopContextProvider = (props) => {
 
-    const currency = '$'
+    const currency = '£'
     const delivery_charges = 5
     const navigate = useNavigate()
     const [token, setToken] = useState("")

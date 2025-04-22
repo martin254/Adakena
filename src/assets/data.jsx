@@ -43,7 +43,19 @@ import book_33 from './book_33.png'
 import book_34 from './book_34.png'
 import book_35 from './book_35.png'
 import book_36 from './book_36.png'
+import dinopage2 from './dino_2.png'
+import dinopage3 from './dino_3.png'
+import dinopage4 from './dino_4.png'
+import dinopage5 from './dino_5.png'
+import Tracing_1 from './Tracing_1.png'
+import Tracing_2 from './Tracing_2.png'
+import Tracing_3 from './Tracing_3.jpg'
+import Tracing_4 from './Tracing_4.png'
 import Adakena10 from './Adakena10.jpg'
+import Adakena1 from './Adakena1.jpg'
+import Adakena2 from './Adakena2.jpg'
+import Adakena3 from './Adakena3.jpg'
+import Adakena4 from './Adakena4.jpg'
 import Tiny_Dino from './Tiny_Dino.png'
 import tracingbook from './TracingCover.png'
 
@@ -84,33 +96,36 @@ import {
       slug: "tracing-workbook",
       name: "Tracing Workbook",
       image: tracingbook,
-      price: 30,
-      description: "Tracing Workbook for Preschoolers...",
+      price: 10,
+      description: "Tracing Workbook for Preschoolers and Toddlers Letters, Numbers, Shapes, Lines & More! Unlock your child’s learning potential with this fun and engaging tracing workbook! Designed for children aged 3+, this educational resource helps develop essential pre-writing and fine motor skills through 100+ pages of creative activities.",
       category: "Tracing",
       date: 1716634345448,
       popular: true,
+      previewPages: [Tracing_1, Tracing_2, Tracing_3, Tracing_4 ],
     },
     {
       _id: "2",
       slug: "tiny-tinnie-dino",
       name: "Tiny Tinnie Dino",
       image: Tiny_Dino,
-      price: 20,
-      description: "Dinosaur Colouring Book...",
+      price: 10,
+      description: "Welcome to the exciting world of dinosaurs! This coloring book is perfect for young explorers aged 3 to 6 who love dinosaurs and creativity. Packed with over 50 pages of delightful dinosaur illustrations, this book offers a fun and educational journey through the prehistoric era.",
       category: "Coloring",
       date: 1716634345448,
       popular: true,
+      previewPages: [dinopage2, dinopage3, dinopage4, dinopage5 ],
     },
     {
       _id: "3",
       slug: "power-of-dreams",
       name: "Power of Dreams",
       image: Adakena10,
-      price: 15,
+      price: 10,
       description: "Aspiring Little Heroes.",
       category: "StoryBook",
       date: 1716634345448,
       popular: true,
+      previewPages: [Adakena1, Adakena2, Adakena3, Adakena4 ],
     },
   ]
   ;
