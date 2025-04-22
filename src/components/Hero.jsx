@@ -51,17 +51,15 @@ const Hero = () => {
         {/* 📚 Left Text */}
         <div className="flex-1 animate-slideInLeft">
           <h1 className="text-[2.2rem] sm:text-[2.8rem] xl:text-[3rem] leading-tight text-ink font-bold font-fun mb-3">
-            Meet Karen, the Author and Creator of Adakena!
+            Meet Adakena.G , the Author and Creator at Adakena!
           </h1>
 
           <p className="text-gray-700 text-[18px] mb-5 max-w-2xl leading-relaxed font-fun">
-            Karen is a passionate Kenyan children’s book author dedicated to empowering African kids through storytelling.
-            Born and raised in Nairobi, she grew up surrounded by vibrant tales passed down through generations—stories rich
-            in culture, courage, and imagination. Her mission is to help kids see themselves in the stories they read.
+          AdaKena.G is a vibrant children’s author originally from Nairobi, Kenya, now based in West Sussex, UK. Her work spans empowering stories, fun learning tools, and creative play—reflecting her belief that childhood should be filled with possibility, confidence, and joy. She is the author of Power of Dreams: Aspiring Little Heroes, a heartwarming collection of stories celebrating Black children’s dreams, as well as a dinosaur-themed colouring book and a handwriting tracing book that support early learning in playful, engaging ways. AdaKena.G is passionate about representation, creativity, and nurturing children’s imaginations across every page.
           </p>
 
           <Link to="/shop" className="bg-[#ffbcb1] hover:bg-[#fcaeaa] text-black text-sm font-semibold px-6 py-3 rounded-full transition">
-            Discover Books
+            Explore Books
           </Link>
         </div>
 
@@ -74,7 +72,7 @@ const Hero = () => {
                   <img
                     src={src}
                     alt={`Hero Slide ${index + 1}`}
-                    className="rounded-xl w-full h-auto max-h-[500px] object-contain mx-auto shadow-lg transition-transform duration-300 hover:scale-105"
+                    className="rounded-xl max-w-[550px] w-full h-auto max-h-[500px] object-contain mx-auto shadow-lg transition-transform duration-300 hover:scale-105"
                   />
                 </Link>
               </div>
