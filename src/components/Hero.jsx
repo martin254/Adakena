@@ -58,7 +58,7 @@ const Hero = () => {
           AdaKena.G is a vibrant children’s author originally from Nairobi, Kenya, now based in West Sussex, UK. Her work spans empowering stories, fun learning tools, and creative play—reflecting her belief that childhood should be filled with possibility, confidence, and joy. She is the author of Power of Dreams: Aspiring Little Heroes, a heartwarming collection of stories celebrating Black children’s dreams, as well as a dinosaur-themed colouring book and a handwriting tracing book that support early learning in playful, engaging ways. AdaKena.G is passionate about representation, creativity, and nurturing children’s imaginations across every page.
           </p>
 
-          <Link to="/shop" className="bg-[#ffbcb1] hover:bg-[#fcaeaa] text-black text-sm font-semibold px-6 py-3 rounded-full transition">
+          <Link to="/shop" className="bg-[#98f489fb] hover:bg-[#fcaeaa] text-black text-sm font-semibold px-6 py-3 rounded-full transition">
             Explore Books
           </Link>
         </div>

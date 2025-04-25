@@ -29,7 +29,9 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 w-full left-0 right-0 z-50">
-      <div className="bg-[#FFFAEB] py-3 max-padd-container flexBetween border-b border-slate-900/10 transition-all duration-300 font-fun">
+      
+      
+      <div className="bg-[#98f489fb] py-3 px-6  max-padd-container flexBetween border-b border-slate-900/10 transition-all duration-300 font-fun rounded-b-2xl">
         {/* logo */}
         <Link to="/" className="flex-1 flex items-center justify-start">
           <h4 className="text-2xl font-bold text-amber-900 font-fun">Adakena</h4>

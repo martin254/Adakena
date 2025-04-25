@@ -36,7 +36,7 @@ const Navbar = ({ containerStyles, toggleMenu, menuOpened }) => {
             <a
               onClick={menuOpened ? toggleMenu : undefined}
               href={to}
-              className="flexCenter gap-x-2 text-lg text-gray-700 hover:text-amber-700 transition font-fun"
+              className="flexCenter gap-x-2 text-lg text-gray-700 hover:text-amber-900 transition font-fun"
             >
               <span className="text-xl">{icon}</span>
               <span>{label}</span>

@@ -1,3 +1,4 @@
+// src/App.jsx
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Header from './components/Header'
@@ -14,17 +15,36 @@ import ScrollToTop from './components/ScrollToTop'
 const App = () => {
   return (
     <main className="relative bg-[#FFFAEB] min-h-screen px-4 md:px-10 lg:px-20 overflow-hidden">
+      
+      {/* 🔅 LEFT SOLID ORANGE MATCHING GUTTER */}
+      <div
+        className="
+          pointer-events-none
+          absolute top-0 left-0
+          h-full
+          bg-[#e58000]
+          w-4 md:w-10 lg:w-20
+          z-0
+        "
+      />
 
-      {/* 🔅 LEFT GRADIENT FADE */}
-      <div className="pointer-events-none absolute top-0 left-0 h-full w-10 bg-gradient-to-r from-yellow-200 to-transparent z-0" />
-
-      {/* 🔅 RIGHT GRADIENT FADE */}
-      <div className="pointer-events-none absolute top-0 right-0 h-full w-10 bg-gradient-to-l from-yellow-200 to-transparent z-0" />
+      {/* 🔅 RIGHT SOLID ORANGE MATCHING GUTTER */}
+      <div
+        className="
+          pointer-events-none
+          absolute top-0 right-0
+          h-full
+          bg-[#e58000]
+          w-4 md:w-10 lg:w-20
+          z-0
+        "
+      />
 
       {/* MAIN SITE CONTENT */}
-      <div className="relative z-10 max-w-screen-2xl mx-auto">
+      <div className="relative z-10">
         <ScrollToTop />
         <Header />
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Shop />} />

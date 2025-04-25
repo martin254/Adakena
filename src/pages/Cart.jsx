@@ -53,7 +53,7 @@ const Cart = () => {
             <div className='flex mt-20'>
                 <div className='w-full sm:w-[450px]'>
                     <CartTotal />
-                    <button onClick={()=> navigate('/place-order')} className='btn-secondaryOne mt-7'>
+                    <button onClick={()=> navigate('/place-order')} className='btn-secondaryOne  mt-7'>
                         Proceed to Checkout
                     </button>
                 </div>

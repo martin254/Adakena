@@ -71,7 +71,7 @@ const BookDetails = () => {
 
             <button
               onClick={() => addToCart(book._id)}
-              className="bg-secondaryOne hover:bg-pink-400 text-black px-6 py-3 rounded-full shadow-lg transition animate-pulse-glow"
+              className="bg-[#98f489fb] hover:bg-yellow-400 text-black px-6 py-3 rounded-full shadow-lg transition animate-pulse-glow"
             >
               Add to Cart
             </button>

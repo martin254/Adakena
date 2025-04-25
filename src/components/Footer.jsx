@@ -5,9 +5,9 @@ import { FOOTER_CONTACT_INFO, FOOTER_LINKS, SOCIALS } from '../assets/data'
 
 const Footer = () => {
   return (
-    <footer className="relative bg-[#FFFAEB] text-black w-full overflow-hidden">
+    <footer className="relative bg-[#FFFAEB] text-black w-full overflow-hidden rounded-b-2xl ">
       {/* Wave Divider at the Top */}
-      <div className="absolute top-0 left-0 w-full overflow-hidden leading-none rotate-180 z-10">
+      <div className="absolute top-0 left-0 w-full overflow-hidden leading-none rotate-180 z-10 ">
         <svg viewBox="0 0 1440 150" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
           <path fill="#FFFAEB" d="M0,60 C360,180 1080,0 1440,120 L1440,0 L0,0 Z" />
         </svg>
@@ -18,7 +18,7 @@ const Footer = () => {
       <div className="absolute top-[70%] right-10 w-3 h-3 bg-purple-200 rounded-full animate-sparkle z-0" />
 
       {/* Footer Content */}
-      <div className="relative z-20 w-full px-6 pt-28 pb-10 mx-auto max-w-screen-2xl">
+      <div className="relative z-20 w-full px-6 pt-28 pb-10 mx-auto max-w-screen-2xl  ">
         {/* Heading */}
         <div className="mb-10">
           <h3 className="text-3xl font-bold mb-2 text-gray-900 font-fun">
@@ -80,7 +80,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Strip */}
-      <div className="bg-amber-900 text-white py-3 px-6 flex flex-col sm:flex-row justify-between items-center text-sm rounded-b-2xl">
+      <div className="bg-[#98f489fb]  text-black py-3 px-6 flex flex-col sm:flex-row justify-between items-center text-sm rounded-b-2xl">
         <span>2025 Adakena</span>
         <span>All rights reserved</span>
       </div>
