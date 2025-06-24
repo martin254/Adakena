@@ -1,4 +1,5 @@
-![image](https://github.com/user-attachments/assets/63038f48-4754-474e-8a36-c40221a6c568)
+![image](https://github.com/user-attachments/assets/551b5726-fcca-4c7b-bba8-ad8e21509156)
+
 
 Kids Author Book Store built with React JS
 
