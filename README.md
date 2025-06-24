@@ -1,7 +1,7 @@
 ![image](https://github.com/user-attachments/assets/551b5726-fcca-4c7b-bba8-ad8e21509156)
 
 
-Kids Author Book Store built with React JS
+Kids Author Book Store built with React JS - https://Adakena.com
 
 # React + Vite
 
